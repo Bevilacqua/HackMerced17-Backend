@@ -1,0 +1,3 @@
+test:
+  database: HackMerced17Backend_test
+  password: pass
