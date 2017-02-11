@@ -55,13 +55,18 @@ class AnalyzeController < ApplicationController
       return
     end
 
+    most_common = {}
+
     list_of_words.each do |word_obj|
       if(!word_obj[:word] || !word_obj[:count])
         render json: [msg: "Each word object must have a word and a count.", status: 400], status: 400
         return
       end
+      most_common[word_obj[:word]] = word_obj[:count] if word_obj[:word].length > 3
+      break if most_common.count >= 5
     end
-    render json: [msg: "ayyy", status: 200], status: 200
+
+    render json: [most_common: most_common, status: 200], status: 200
   end
 
 end
