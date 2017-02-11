@@ -6,4 +6,5 @@ Apipie.configure do |config|
   config.api_controllers_matcher = "#{Rails.root}/app/controllers/**/*.rb"
   config.copyright               = "Study Space, Inc. 2017"
   config.app_info                = "API for HackMerced17. Endpoints are for analyzing sites and determining if the source is reliable."
+  config.validate                = "eplicitly"
 end
