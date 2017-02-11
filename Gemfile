@@ -33,6 +33,9 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
 end
 
+# Generate API documentation
+gem 'apipie-rails'
+
 group :development do
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
