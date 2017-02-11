@@ -6,4 +6,4 @@ services:
   - postgresql
 
 before_script:
-  - psql -c 'create database HackMerced17-Backend_test;' -U postgres
+  - psql -c 'create database HackMerced17Backend_test;' -U postgres

@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: HackMerced17-Backend_development
+  database: HackMerced17Backend_development
   password: pass
 
   # The specified database role being used to connect to postgres.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: HackMerced17-Backend_test
+  database: HackMerced17Backend_test
   password: pass
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
