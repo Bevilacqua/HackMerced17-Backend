@@ -5,5 +5,9 @@ rvm:
 services:
   - postgresql
 
+test:
+  adapter: postgresql
+  database: HackMerced17Backend_test
+
 before_script:
-  - psql -c 'create database HackMerced17Backend_test;' -U postgres
+  - cp config/database.yml.travis config/database.yml
